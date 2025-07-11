@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shibaya's Portfolio</title>
+    <link rel="stylesheet" href="portfolio-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- アイコンの実装 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Googleフォント -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="container">
+        <!-- ヘッダー -->
+        <header id="header">
+            <h1 class="app-name">
+                <a href="./portfolio.html">
+                    <p>Shibaya's <br> 
+                    Portfolio</p>
+                </a>
+            </h1>
+            <nav id="navigation">
+                <li class="menu"><a href="#">TOP</a></li>
+                <li class="menu"><a href="#profile-area">PROFILE</a></li>
+                <li class="menu"><a href="#skill-area">SKILL</a></li>
+                <li class="menu"><a href="#works-area">WORKS</a></li>
+                <li class="menu"><a href="#contact-area">CONTACT</a></li>
+            </nav>
+        </header>
+
+        <!-- メニューアイコン -->
+        <div id="menu-toggle" onclick="toggleMenu()">
+            <span id="menu-icon" class="material-icons">menu</span>
+        </div>
+
+        <!-- ポップアップメニュー -->
+        <div id="menu-panel">
+            <ul>
+                <li><a href="#">TOP</a></li>
+                <li><a href="#profile-area">PROFILE</a></li>
+                <li><a href="#skill-area">SKILL</a></li>
+                <li><a href="#works-area">WORKS</a></li>
+                <li><a href="#contact-area">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <!-- メインコンテンツ -->
+        <main class="contents">
+            <h1 class="title">Shibaya's Portfolio</h1>
+            <div class="contents-erea">
+            <!-- プロフィール -->
+                <section id="profile-area">
+                    <h2 class="portfolio-items">PROFILE</h2>
+                    <img src="./img/ユキナ.jpg" alt="プロフィールアイコン" class="icon">
+                    <div class="introductions">
+                        <p class="self-introduction">平成17年生まれ(現在19歳)の柴谷 美沙子です。</p>
+                        <p class="self-introduction">趣味はアニメを見たり、読書したり、たまに景色の写真を撮ったり、好きなイラストを描いたりしている正真正銘オタクです。
+                            歌うのが好きなので気分転換にカラオケに行っています。(そこそこ自信はあります)</p>
+                        <div class="chronology"></p>
+                            <h3>年表</h3>
+                            <ul class="chronology-list">
+                                <li class="history">2005年9月　岩手県大船渡市に生まれる</li>
+                                <li class="history">2011年4月　岩手県立大船渡小学校に入学</li>
+                                <li class="history">2017年3月　岩手県立大船渡小学校を卒業</li>
+                                <li class="history">2017年4月　岩手県立大船渡中学校に入学<br>
+                                    <h4 class="episode">この頃の出来事➀</h4>
+                                    <p>・駅伝競走大会で2年連続県大会出場</p>
+                                </li>
+                                <li class="history">2021年3月　岩手県立大船渡中学校を卒業</li>
+                                <li class="history">2021年4月　岩手県立大船渡東高等学校情報処理科に入学
+                                    <h4 class="episode">この頃の出来事➁</h4>
+                                    <p>・2年生の6月に<span class="episode1">岩手県選手権女子3000mで2位を獲得</span></p>
+                                    <p>・東高校設立初の全国高校駅伝県予選女子の部への出場</p>
+                                    <p>・生徒会に入り、1年生に監査、<span class="episode2">2年生に副会長</span>を務める</p>
+                                </li>
+                                <li class="history">2024年3月　岩手県立大船渡東高等学校を卒業</li>
+                                <li class="history">2024年4月　MCL盛岡情報ビジネス＆デザイン専門学校に入学</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section id="illustration-erea">
+                    <h2>ILUSTRATIONS</h2>
+                    <div class="box1">
+                        <div class="image-with-text">
+                            <div class="image-erea">
+                                <img src="./img/ユキナ.jpg" alt="イラスト1" class="ilustrations">
+                            </div>
+                            <p class="explanation">
+                                いつか自分のオリジナルキャラを描いてみたいなと思っていたところアプリ開発の課題で背景をどうするか悩んでいた時に描いたイラストです。名前はユキナです。
+                            </p>
+                        </div>
+                        <div class="image-with-text">
+                            <div class="image-erea">
+                                <img src="./img/合体戦士.png" alt="イラスト2" class="ilustrations">
+                            </div>
+                            <p class="explanation">
+                                好きなキャラを面白く楽しい構図で描きたいと思ったときに思ついて描いたイラストです。作品とはその時の気分や突発的な発想から生まれるものですね。
+                            </p>
+                        </div>
+                        <div class="image-with-text">
+                            <div class="image-erea">
+                                <img src="./img/アイドル風フリーレン.png" alt="イラスト3" class="ilustrations">
+                            </div>
+                            <p class="explanation">
+                                高校の時に「葬送のフリーレン」というアニメにはまっていた時に描いたオリジナルのイラストです。
+                            </p>
+                        </div>
+                        <div class="image-with-text">
+                            <div class="image-erea">
+                                <img src="./img/景色画.png" alt="イラスト4" class="ilustrations">
+                            </div>
+                            <p class="explanation">
+                                学校帰りに見た空がきれいだったので写真を撮ってそれを元に描きました。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <div class="image-with-text">
+                            <div class="image-erea">
+                                <img src="./img/孫家.png" alt="イラスト5" class="ilustrations">
+                            </div>
+                            <p class="explanation">
+                                悟飯の日(5/8)、悟空の日(5/9)、悟天の日(5/10)の日記念に描いたイラストです。
+                            </p>
+                        </div>
+                        <div class="image-with-text">
+                            <div class="image-erea">
+                                <img src="./img/カービィ.jpg" alt="イラスト6" class="ilustrations">
+                            </div>
+                            <p class="explanation">
+                                体のパーツなどはフリーハンドではなく円や楕円などを描けるツールのみで描きました。図形などを使えばだれでも簡単にカービィを描くことができます。
+                            </p>
+                        </div>
+                        <div class="image-with-text">
+                            <div class="image-erea">
+                                <img src="./img/undertale.png" alt="イラスト7" class="ilustrations">
+                            </div>
+                            <p class="explanation">
+                                アンダーテールを当時遊んでいた時に描いたイラストです。描いたこの子はフリスクですが、これと対照的にキャラという子のイラストもあります。
+                            </p>
+                        </div>
+                        <div class="image-with-text">
+                            <div class="image-erea">
+                                <img src="./img/ナギサ.jpg" alt="イラスト8" class="ilustrations">
+                            </div>
+                            <p class="explanation">
+                                ブルーアーカイブ好きな友達から描いてほしいとリクエストが来たのでブルアカの知識は一切ないですが、希望の構図や特徴などを再現して描きました。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+            <!-- 各スキル -->
+                <section id="skill-area">
+                    <h2 class="skill-items">SKILL</h2>
+                    <div class="skill-group1">
+                        <div class="Skill1">
+                            <div class="headline-with-icon">
+                                <img src="img/フロントエンド.png" alt="フロントエンドマーク">
+                                <h3>フロントエンド</h3>
+                            </div>
+                            <p>HTML/CSS</p>
+                            <p>Javascript</p>
+                        </div>
+                        <div class="sub-group">
+                            <div class="Skill2">
+                                <div class="headline-with-icon">
+                                    <img src="img/バックエンド.png" alt="バックエンドマーク">
+                                    <h3>バックエンド</h3>
+                                </div>
+                                <p>Python (Tkinter)</p>
+                            </div>
+                            <div class="Skill3">
+                                <div class="headline-with-icon">
+                                    <img src="img/DB.png" alt="DBマーク">
+                                    <h3>DB</h3>
+                                </div>
+                                <p>MySQL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-group2">
+                        <div class="Skill4">
+                            <div class="headline-with-icon">
+                                <img src="img/資格.png" alt="資格マーク">
+                                <h3>資格</h3>
+                            </div>
+                            <p>J検定</p>
+                            <p>Python検定3級</p>
+                            <p>Java検定3級</p>
+                        </div>
+                        <div class="Skill5">
+                            <div class="headline-with-icon">
+                                <img src="img/使用環境.png" alt="使用環境マーク">
+                                <h3>使用環境</h3>
+                            </div>
+                            <p>Git</p>
+                            <p>Slack</p>
+                            <p>Ubuntu</p>
+                        </div>
+                    </div>
+                    <div class="Skill6">
+                        <div class="headline-with-icon">
+                            <img src="img/履修済み科目.png" alt="履修済み科目マーク">
+                            <h3>履修済み科目</h3>
+                        </div>
+                        <div class="Subjects-group">
+                            <div class="Subjects">
+                                <p>テクノロジ/セキュリティ</p>
+                                <p>ネットワーク</p>
+                                <p>Webデザイン/JavaScript</p>
+                                <p>アルゴリズム</p>
+                                <p>UML</p>
+                            </div>
+                            <div class="Sujects">
+                                <p>マネジメント/ストラテジ</p>
+                                <p>データベース (MySQL)</p>
+                                <p>Python (Tkinter)</p>
+                                <p>アジャイル開発</p>
+                                <p>Linux</p>                  
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            <!-- 成果物一覧 -->
+                <section id="works-area">
+                    <h2>WORKS</h2>
+                    <p class="overview">今まで作ってきたアプリを紹介します。個人的にフロントエンドが得意で、機能はもちろん特に見た目にはこだわって作っています。</p>
+                    <div class="item-1">
+                        <div class="name-poster">
+                            <h3 class="work-name">神経衰弱</h3>
+                            <div class="poster">
+                                <img class="image" src="img/中間課題ゲーム画面.png" alt="ゲーム画面">
+                            </div>
+                        </div>
+                        <p class="explanation2">pythonのデスクトップアプリの開発の際に作ったゲームです。<br>
+                            めくった時の判定や一致した時にカードが消える処理などが個人的に大変でした。
+                        </p>
+                    </div>
+                    <div class="item-2">
+                        <div class="name-poster">
+                            <h3 class="work-name">連絡先管理アプリ</h3>
+                            <div class="poster">
+                                <img class="image" src="img/期末課題連絡先一覧.png" alt="ログイン画面">
+                            </div>
+                        </div>
+                        <p class="explanation2">神経衰弱と同じくpythonのデスクトップアプリで作ったアプリケーションです。<br>
+                            ユーザ管理と連絡先管理２つのデータベースで分けて作り、新規ユーザ登録の際に登録したメールアドレスに通知が来る処理、連絡先編集、削除ができます。
+                        </p>
+                    </div>
+                    <div class="item-1">
+                        <div class="name-poster">
+                            <h3 class="work-name">アニメ紹介ページ</h3>
+                            <div class="poster">
+                                <img class="image" src="img/アニメ紹介Top.png" alt="Top">
+                            </div>
+                        </div>
+                        <p class="explanation2">春休みの課題で作ったHTMLです。テーマはなかったので今自分がハマってるアニメの紹介ページを作りました。<br>
+                            おすすめの曲ページでは曲が再生できます。※現在改良中
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    <!-- SNSアカウントフッター -->
+        <footer id="contact">
+            <section id="contact-area">
+                <h2>CONTACT</h2>
+                <div class="account">
+                    <img src="img/インスタアイコン.png" alt="アカウント">
+                    <a href="https://www.instagram.com/missa.0915?igsh=MTFzOWg1bGphbjlsMA%3D%3D&utm_source=qr" class="Insta-link">missa.0915のInstagramへ</a>
+                </div>
+                <a href="#" id="top-page">Shibaya's Portfolio</a>
+            </section>
+        </footer>
+    </div>
+    <script type="text/javascript" src="portfolio.js"></script>
+</body>
+</html>
