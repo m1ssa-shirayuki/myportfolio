@@ -71,19 +71,12 @@
         margin-left: 40px;
         margin-right: 0px;
         padding-right: 80px;
+        color: rgba(71, 116, 168, 1);
         text-align: center;
+        line-height: 3.0px;
     }
     .app-name a {
         text-decoration: none;
-        color: rgba(71, 116, 168, 1);
-        transition: transform 0.3s ease;
-    }
-    .app-name p {
-        transition: transform 0.3s ease;
-    }
-    .app-name p:hover {
-        transform: scale(1.2,1.2);
-        transition-duration: 0.5s;
     }
     #header img {
         width: 140px;
@@ -261,10 +254,6 @@
         padding-top: 30px;
         margin-bottom: 5%;
     }
-    .ilustrations {
-        width: 50%;
-        height: auto;
-    }
     .image-with-text {
         display: block;
         align-items: center;
@@ -303,6 +292,7 @@
         align-items: center;
         height: 250px;
         width: auto;
+        margin: 10px;
     }
 /* スキル */
     #skill-area {
@@ -469,7 +459,7 @@
         text-align: center;
         font-size: 20px;
         font-weight: bold;
-        width: 80%;
+        width: 50%;
         margin: 0 auto;
     }
     .poster {
@@ -501,14 +491,17 @@
     }
     .explanation2 {
         flex: 1;
-        line-height: 1.6;
         text-align: left;
         align-items: center;
         font-size: 20px;
-        margin-top: 10%;
         font-family: 'Noto Sans JP', sans-serif;
         font-weight: bold;
+        margin: 10% 0 0 0;
     }
+    .explanation2 p {
+        display: inline;
+    }
+
 /* メニューアイコン */
     #menu-toggle {
         position: fixed;
