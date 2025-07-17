@@ -56,16 +56,16 @@ function toggleMenu() {
 // スクロールされたら表示される処理
 document.addEventListener('DOMContentLoaded', () => {
   const toggleBtn = document.getElementById('menu-toggle');
-  const header = document.querySelector('header'); // ヘッダーの要素は調整してね
+  const header = document.querySelector('header');
 
   window.addEventListener('scroll', () => {
     const headerBottom = header.getBoundingClientRect().bottom;
 
     if (headerBottom <= 0) {
-      toggleBtn.classList.add('show');   // ← アニメーション表示
+      toggleBtn.classList.add('show');
     } else {
-      toggleBtn.classList.remove('show'); // ← フェードアウト
-      if (isMenuOpen) toggleMenu(); // 開いてたら閉じる
+      toggleBtn.classList.remove('show');
+      if (isMenuOpen) toggleMenu();
     }
   });
 });
