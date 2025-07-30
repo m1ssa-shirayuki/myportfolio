@@ -53,10 +53,11 @@ function toggleMenu() {
   isMenuOpen = !isMenuOpen;
 }
 
-// スクロールされたら表示される処理
 document.addEventListener('DOMContentLoaded', () => {
   const toggleBtn = document.getElementById('menu-toggle');
   const header = document.querySelector('header');
+
+  toggleBtn.addEventListener('click', toggleMenu);
 
   window.addEventListener('scroll', () => {
     const headerBottom = header.getBoundingClientRect().bottom;
@@ -65,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
       toggleBtn.classList.add('show');
     } else {
       toggleBtn.classList.remove('show');
-      if (isMenuOpen) toggleMenu();
+      if (isMenuOpen) toggleMenu(); // 自動で閉じる
     }
   });
 });
