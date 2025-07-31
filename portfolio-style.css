@@ -602,6 +602,9 @@
         transition: opacity 0.4s ease;
         z-index: 10000;
     }
+    .title {
+        font-size: 60px;
+    }
     .app-name {
         margin: 0 auto;
         padding: 0;
@@ -614,6 +617,7 @@
     #navigation .menu {
         margin: 10px 0;
     }
+    /* プロフィール */
     .self-introduction {
         width: 60%;
         font-size: 20px;
@@ -637,6 +641,33 @@
     .chronology-list h4{
         font-size: 20px;
     }
+    /* イラスト */
+    .box1,
+    .box2 {
+        display: block;
+    }
+    .ilustrations {
+        padding: 0 20px;
+    }
+    .image-with-text {
+        display: block;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 5%;
+        width: 100%;
+        height: auto;
+    }
+    .image-erea {
+        width: fit-content;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .explanation {
+        margin-top: 30px;
+        font-size: 23px;
+        width: 50%;
+    }
+    /* スキル */
     #skill-area p {
         font-size: 17px;
     }
@@ -647,34 +678,34 @@
         font-size: 20px;
     }
     #works-area h3{
-        font-size: 10px;
+        font-size: 20px;
     }
     .poster {
         max-width: 400px;
         flex-shrink: 0;
         text-align: center;
+        margin: 0 auto;
+        padding-bottom: 30px;
     }
     .image {
         width: 100%;
         height: auto;
+        margin: 0 auto;
         box-shadow: 5px 4px 4px #707070;
     }
     .item-1,
     .item-2 {
-        display: flex;
+        display: block;
         align-items: center;
         justify-content: center;
         gap: 60px;
-        margin: 10px 100px 50px 100px;
         max-width: 1000px;
         flex-wrap: wrap;
         padding: 30px;
     }
-    .item-2 {
-        flex-direction: row-reverse;
-    }
     .name-poster {
         display: block;
+        margin: 0 auto;
     }
     .explanation2 {
         text-align: left;
@@ -682,10 +713,9 @@
         font-size: 25px;
         font-family: 'Noto Sans JP', sans-serif;
         font-weight: bold;
-        margin: 10% 0 0 0;
+        margin: 0 auto;
     }
     .explanation2 p {
         margin: 0;
     }
-
 }
